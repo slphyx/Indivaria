@@ -1,0 +1,12 @@
+ 
+model	1.6
+
+initxy	{1,1} 	#initial x and y
+initd	{1,1}	#d1,d2
+r	4.
+ps	{0.00001,0.001}		# p and s for (e^-px , e^-sx)
+
+runsteps	50		#time in day
+outform		0
+    (* initxy_List, lsd_List, r_, lsPS_List, runT_,outform_ *)
+   	parms = {"model","initxy","initd","r","ps","runsteps","outform"};

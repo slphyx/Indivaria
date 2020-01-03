@@ -1,0 +1,500 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     12747,        491]
+NotebookOptionsPosition[      8390,        336]
+NotebookOutlinePosition[      9014,        360]
+CellTagsIndexPosition[      8936,        355]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[{
+ "New in: ",
+ Cell["0.0", "HistoryData",
+  CellTags->"New"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete"],
+ " | Excised in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Excised"]
+}], "History",
+ CellID->1247902091],
+
+Cell[CellGroupData[{
+
+Cell["Categorization", "CategorizationSection",
+ CellID->1122911449],
+
+Cell["Symbol", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->686433507],
+
+Cell["Indivaria", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->605800465],
+
+Cell["Indivaria`", "Categorization",
+ CellLabel->"Context",
+ CellID->468444828],
+
+Cell["Indivaria/ref/RI", "Categorization",
+ CellLabel->"URI"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->477174294],
+
+Cell["XXXX", "Keywords",
+ CellID->1164421360]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Syntax Templates", "TemplatesSection",
+ CellID->1872225408],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Additional Function Template",
+ CellID->1562036412],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Arguments Pattern",
+ CellID->158391909],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Local Variables",
+ CellID->1360575930],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Color Equal Signs",
+ CellID->793782254]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Details", "DetailsSection",
+ CellID->307771771],
+
+Cell["XXXX", "Details",
+ CellLabel->"Lead",
+ CellID->670882175],
+
+Cell["XXXX", "Details",
+ CellLabel->"Developers",
+ CellID->350963985],
+
+Cell["XXXX", "Details",
+ CellLabel->"Authors",
+ CellID->8391405],
+
+Cell["XXXX", "Details",
+ CellLabel->"Feature Name",
+ CellID->3610269],
+
+Cell["XXXX", "Details",
+ CellLabel->"QA",
+ CellID->401364205],
+
+Cell["XXXX", "Details",
+ CellLabel->"DA",
+ CellID->350204745],
+
+Cell["XXXX", "Details",
+ CellLabel->"Docs",
+ CellID->732958810],
+
+Cell["XXXX", "Details",
+ CellLabel->"Features Page Notes",
+ CellID->222905350],
+
+Cell["XXXX", "Details",
+ CellLabel->"Comments",
+ CellID->240026365]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["RI", "ObjectName",
+ CellID->1224892054],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"RI", "[", 
+   RowBox[{
+    StyleBox["ec50", "TI"], ",", 
+    StyleBox["emax", "TI"], ",", 
+    StyleBox["gamma", "TI"], ",", 
+    StyleBox["const", "TI"]}], "]"}]], "InlineFormula"],
+ " \[LineSeparator]calculate a value of resistance index following the \
+definition given in Saralamba S., et al., 2011 \"Intrahost modeling of \
+artemisinin resistance in ",
+ StyleBox["Plasmodium falciparum",
+  FontSlant->"Italic"],
+ "\", Proc Natl Acad Sci USA; 108:397-402. A high value of RI corresponds to \
+a high level of resistance and a low value corresponds to a low level of \
+resistance."
+}], "Usage",
+ CellChangeTimes->{{3.5102900257703075`*^9, 3.5102900819540086`*^9}, {
+  3.510290115020702*^9, 3.5102902183443556`*^9}, {3.5102902663433867`*^9, 
+  3.5102904353006*^9}, {3.5175442775471115`*^9, 3.517544280202733*^9}, {
+  3.5175443121170483`*^9, 3.5175443121639123`*^9}, {3.5175445918945312`*^9, 
+  3.51754460629737*^9}},
+ CellID->982511436],
+
+Cell["\<\
+To use RI, you need to load the package Indivaria using Needs[\"Indivaria`\"].\
+\>", "Notes",
+ CellChangeTimes->{{3.5102911100517*^9, 3.510291143602601*^9}},
+ CellID->309797178],
+
+Cell["\<\
+RI[ec50,emax,gamma,const] calculates the resistance index using the \
+definition given in Saralamba et al. PNAS 2011. That is RI = (ec50 \[Times] \
+const)/(gamma \[Times] gamma).\
+\>", "Notes",
+ CellChangeTimes->{{3.510290462463084*^9, 3.5102905471681747`*^9}, {
+  3.5102906754050913`*^9, 3.510290760906781*^9}, {3.510290831398036*^9, 
+  3.5102908385049543`*^9}, {3.5102908698066325`*^9, 3.5102909386578293`*^9}, {
+  3.5175446606438727`*^9, 3.517544661674879*^9}},
+ CellID->1067943069]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Tutorials", "TutorialsSection",
+ CellID->250839057],
+
+Cell[TextData[ButtonBox[Cell["Using Indivaria", "Tutorials",
+ CellChangeTimes->{{3.510372989107336*^9, 3.5103729917314963`*^9}}],
+ BaseStyle->"Link",
+ ButtonData->"paclet:Indivaria/tutorial/Using Indivaria"]], "Tutorials",
+ CellChangeTimes->{{3.510372989107336*^9, 3.5103729917314963`*^9}},
+ CellID->63465136]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Demonstrations", "RelatedDemonstrationsSection",
+ CellID->1268215905],
+
+Cell["XXXX", "RelatedDemonstrations",
+ CellID->1129518860]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Links", "RelatedLinksSection",
+ CellID->1584193535],
+
+Cell["XXXX", "RelatedLinks",
+ CellID->1038487239]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["See Also", "SeeAlsoSection",
+ CellID->1255426704],
+
+Cell[TextData[Cell[BoxData[
+ ButtonBox["IDVL",
+  BaseStyle->"Link",
+  ButtonData->"paclet:Indivaria/ref/IDVL"]], "InlineFormula"]], "SeeAlso",
+ CellChangeTimes->{{3.510291275307068*^9, 3.5102912861939297`*^9}},
+ CellID->929782353]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More About", "MoreAboutSection",
+ CellID->38303248],
+
+Cell["XXXX", "MoreAbout",
+ CellID->1665078683]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox["Examples", "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->880084151],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<Indivaria`\>\"", "]"}]], "Input",
+ CellLabel->"In[7]:=",
+ CellID->19501102],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"RI", "[", 
+  RowBox[{"20.5", ",", "99.99", ",", "6.5", ",", "6.0"}], "]"}]], "Input",
+ CellChangeTimes->{{3.510291159987561*^9, 3.5102911819330997`*^9}},
+ CellLabel->"In[8]:=",
+ CellID->158971281],
+
+Cell[BoxData["\<\"Resistance Index = (Const*Ec50)/(Emax*Gamma)\"\>"], "Print",
+ CellChangeTimes->{
+  3.5102911839167886`*^9, {3.510291311638258*^9, 3.5102913170894985`*^9}, 
+   3.5102913716800003`*^9},
+ CellLabel->"During evaluation of In[8]:=",
+ CellID->202699583],
+
+Cell[BoxData["0.18924969420018928`"], "Output",
+ CellChangeTimes->{
+  3.5102911839167886`*^9, {3.510291311638258*^9, 3.5102913170894985`*^9}, 
+   3.5102913716956196`*^9},
+ CellLabel->"Out[8]=",
+ CellID->193494388]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More Examples", "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->1854448968],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Scope", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1293636265],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Generalizations & Extensions", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1020263627],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Options", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2061341341],
+
+Cell[BoxData[
+ InterpretationBox[Cell["XXXX", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1757724783],
+
+Cell[BoxData[
+ InterpretationBox[Cell["XXXX", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1295379749]
+}, Closed]],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Applications", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->258228157],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Properties & Relations", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2123667759],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Possible Issues", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1305812373],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Interactive Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1653164318],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Neat Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->589267740]
+}, Open  ]]
+},
+WindowSize->{743, 770},
+WindowMargins->{{Automatic, 320}, {Automatic, 1}},
+CellContext->"Global`",
+FrontEndVersion->"8.0 for Microsoft Windows (32-bit) (November 7, 2010)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStyles.nb", 
+  CharacterEncoding -> "WindowsThai"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "ExtendedExamples"->{
+  Cell[6870, 278, 100, 2, 53, "ExtendedExamplesSection",
+   CellTags->"ExtendedExamples",
+   CellID->1854448968]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"ExtendedExamples", 8798, 348}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 325, 14, 22, "History",
+ CellID->1247902091],
+Cell[CellGroupData[{
+Cell[907, 38, 68, 1, 27, "CategorizationSection",
+ CellID->1122911449],
+Cell[978, 41, 79, 2, 70, "Categorization",
+ CellID->686433507],
+Cell[1060, 45, 82, 2, 70, "Categorization",
+ CellID->605800465],
+Cell[1145, 49, 79, 2, 70, "Categorization",
+ CellID->468444828],
+Cell[1227, 53, 61, 1, 70, "Categorization"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1325, 59, 55, 1, 17, "KeywordsSection",
+ CellID->477174294],
+Cell[1383, 62, 45, 1, 70, "Keywords",
+ CellID->1164421360]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1465, 68, 65, 1, 17, "TemplatesSection",
+ CellID->1872225408],
+Cell[1533, 71, 94, 2, 70, "Template",
+ CellID->1562036412],
+Cell[1630, 75, 82, 2, 70, "Template",
+ CellID->158391909],
+Cell[1715, 79, 81, 2, 70, "Template",
+ CellID->1360575930],
+Cell[1799, 83, 82, 2, 70, "Template",
+ CellID->793782254]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1918, 90, 53, 1, 17, "DetailsSection",
+ CellID->307771771],
+Cell[1974, 93, 63, 2, 70, "Details",
+ CellID->670882175],
+Cell[2040, 97, 69, 2, 70, "Details",
+ CellID->350963985],
+Cell[2112, 101, 64, 2, 70, "Details",
+ CellID->8391405],
+Cell[2179, 105, 69, 2, 70, "Details",
+ CellID->3610269],
+Cell[2251, 109, 61, 2, 70, "Details",
+ CellID->401364205],
+Cell[2315, 113, 61, 2, 70, "Details",
+ CellID->350204745],
+Cell[2379, 117, 63, 2, 70, "Details",
+ CellID->732958810],
+Cell[2445, 121, 78, 2, 70, "Details",
+ CellID->222905350],
+Cell[2526, 125, 67, 2, 70, "Details",
+ CellID->240026365]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[2630, 132, 45, 1, 62, "ObjectName",
+ CellID->1224892054],
+Cell[2678, 135, 1004, 23, 113, "Usage",
+ CellID->982511436],
+Cell[3685, 160, 187, 4, 23, "Notes",
+ CellID->309797178],
+Cell[3875, 166, 495, 9, 37, "Notes",
+ CellID->1067943069]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4407, 180, 57, 1, 43, "TutorialsSection",
+ CellID->250839057],
+Cell[4467, 183, 309, 5, 16, "Tutorials",
+ CellID->63465136]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4813, 193, 83, 1, 30, "RelatedDemonstrationsSection",
+ CellID->1268215905],
+Cell[4899, 196, 58, 1, 16, "RelatedDemonstrations",
+ CellID->1129518860]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4994, 202, 65, 1, 30, "RelatedLinksSection",
+ CellID->1584193535],
+Cell[5062, 205, 49, 1, 16, "RelatedLinks",
+ CellID->1038487239]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5148, 211, 55, 1, 30, "SeeAlsoSection",
+ CellID->1255426704],
+Cell[5206, 214, 230, 5, 19, "SeeAlso",
+ CellID->929782353]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5473, 224, 57, 1, 30, "MoreAboutSection",
+ CellID->38303248],
+Cell[5533, 227, 46, 1, 16, "MoreAbout",
+ CellID->1665078683]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5616, 233, 356, 11, 68, "PrimaryExamplesSection",
+ CellID->880084151],
+Cell[5975, 246, 117, 3, 27, "Input",
+ CellID->19501102],
+Cell[CellGroupData[{
+Cell[6117, 253, 220, 5, 27, "Input",
+ CellID->158971281],
+Cell[6340, 260, 265, 5, 21, "Print",
+ CellID->202699583],
+Cell[6608, 267, 213, 5, 25, "Output",
+ CellID->193494388]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6870, 278, 100, 2, 53, "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->1854448968],
+Cell[6973, 282, 125, 3, 30, "ExampleSection",
+ CellID->1293636265],
+Cell[7101, 287, 148, 3, 18, "ExampleSection",
+ CellID->1020263627],
+Cell[CellGroupData[{
+Cell[7274, 294, 127, 3, 18, "ExampleSection",
+ CellID->2061341341],
+Cell[7404, 299, 130, 3, 70, "ExampleSubsection",
+ CellID->1757724783],
+Cell[7537, 304, 130, 3, 70, "ExampleSubsection",
+ CellID->1295379749]
+}, Closed]],
+Cell[7682, 310, 131, 3, 18, "ExampleSection",
+ CellID->258228157],
+Cell[7816, 315, 142, 3, 18, "ExampleSection",
+ CellID->2123667759],
+Cell[7961, 320, 135, 3, 18, "ExampleSection",
+ CellID->1305812373],
+Cell[8099, 325, 140, 3, 18, "ExampleSection",
+ CellID->1653164318],
+Cell[8242, 330, 132, 3, 18, "ExampleSection",
+ CellID->589267740]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

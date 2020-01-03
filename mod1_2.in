@@ -1,0 +1,9 @@
+model 	1.2
+outform		0
+
+parafile		"paraP002.csv"
+concfile		"P002.csv"
+
+outname		"testP002"
+
+runsteps	50

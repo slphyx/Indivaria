@@ -1,0 +1,850 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     27086,        842]
+NotebookOptionsPosition[     22513,        677]
+NotebookOutlinePosition[     22997,        695]
+CellTagsIndexPosition[     22954,        692]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[{
+ "New in: ",
+ Cell["0.0", "HistoryData",
+  CellTags->"New"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete"],
+ " | Excised in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Excised"]
+}], "History",
+ CellID->1247902091],
+
+Cell[CellGroupData[{
+
+Cell["Categorization", "CategorizationSection",
+ CellID->1122911449],
+
+Cell["Tutorial", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->686433507],
+
+Cell["Indivaria", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->605800465],
+
+Cell["Indivaria`", "Categorization",
+ CellLabel->"Context",
+ CellID->468444828],
+
+Cell["Indivaria/tutorial/Using Indivaria", "Categorization",
+ CellLabel->"URI"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->1427428552],
+
+Cell["XXXX", "Keywords",
+ CellID->1251852827]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Details", "DetailsSection",
+ CellID->307771771],
+
+Cell["XXXX", "Details",
+ CellLabel->"Lead",
+ CellID->218895918],
+
+Cell["Sompob Saralamba", "Details",
+ CellChangeTimes->{{3.5103739153870134`*^9, 3.5103739186669197`*^9}},
+ CellLabel->"Developers",
+ CellID->350963985],
+
+Cell["Sompob Saralamba", "Details",
+ CellChangeTimes->{{3.510373911451126*^9, 3.5103739141687627`*^9}},
+ CellLabel->"Authors",
+ CellID->795871300],
+
+Cell["XXXX", "Details",
+ CellLabel->"Feature Name",
+ CellID->199739161],
+
+Cell["XXXX", "Details",
+ CellLabel->"QA",
+ CellID->40625308],
+
+Cell["XXXX", "Details",
+ CellLabel->"DA",
+ CellID->357121918],
+
+Cell["XXXX", "Details",
+ CellLabel->"Docs",
+ CellID->35949532],
+
+Cell["XXXX", "Details",
+ CellLabel->"Features Page Notes",
+ CellID->929432370],
+
+Cell["XXXX", "Details",
+ CellLabel->"Comments",
+ CellID->240026365]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Using Indivaria", "Title",
+ CellID->509267359],
+
+Cell[TextData[{
+ "Indivaria is a package which collected some published mathematical models \
+for the dynamics of malaria paraistes in an infected patient during treatment \
+and without treatment with antimalarial drug. ",
+ Cell[BoxData[
+  ButtonBox["IDVL",
+   BaseStyle->"Link",
+   ButtonData->"paclet:Indivaria/ref/IDVL"]], "InlineFormula"],
+ " is the main function of the package. The user has to enter the list of the \
+parameters and their values of the model they choose in an input file. The \
+parameters of each model are different and can be shown by using the fucntion \
+",
+ Cell[BoxData[
+  ButtonBox["ListPar",
+   BaseStyle->"Link",
+   ButtonData->"paclet:Indivaria/ref/ListPar"]], "InlineFormula"],
+ ". "
+}], "Text",
+ CellChangeTimes->{{3.5103731261216803`*^9, 3.5103731806323385`*^9}, {
+   3.5103733541448517`*^9, 3.510373385538439*^9}, {3.5103735764926653`*^9, 
+   3.5103736121657763`*^9}, 3.5103736810130053`*^9, {3.5103748136126995`*^9, 
+   3.5103748582818956`*^9}, {3.5103748886132164`*^9, 
+   3.5103749898373632`*^9}, {3.5103753528448644`*^9, 
+   3.5103755408459525`*^9}, {3.510377885385236*^9, 3.510377887524984*^9}, {
+   3.510444501284136*^9, 3.5104445013305626`*^9}, {3.51285863273767*^9, 
+   3.512858633034288*^9}},
+ CellID->1534169418],
+
+Cell[BoxData[GridBox[{
+   {
+    RowBox[{
+     ButtonBox["IDVL",
+      BaseStyle->"Link",
+      ButtonData->"paclet:Indivaria/ref/IDVL"], "[", "\"\<\!\(\*
+StyleBox[\"inputfile\", \"TI\"]\)\>\"", "]"}], Cell["\<\
+performs the calculation of the model following the parameters in the input \
+file.\
+\>", "TableText"]},
+   {
+    RowBox[{
+     ButtonBox["ListPar",
+      BaseStyle->"Link",
+      ButtonData->"paclet:Indivaria/ref/ListPar"], "[", 
+     RowBox[{
+      StyleBox["modelID", "TI"], ",", 
+      StyleBox["outform", "TI"]}], "]"}], Cell[
+    "shows the list of parameters required by the model.", "TableText"]},
+   {
+    RowBox[{
+     ButtonBox["RI",
+      BaseStyle->"Link",
+      ButtonData->"paclet:Indivaria/ref/RI"], "[", 
+     RowBox[{
+      StyleBox["ec50", "TI"], ",", 
+      StyleBox["emax", "TI"], ",", 
+      StyleBox["gamma", "TI"], ",", 
+      StyleBox["const", "TI"]}], "]"}], Cell[
+    "calculates the resistance index.", "TableText"]}
+  }]], "DefinitionBox",
+ CellChangeTimes->{{3.5103727992462363`*^9, 3.5103728252379165`*^9}, {
+  3.5103730306877766`*^9, 3.51037310911248*^9}, {3.5103740671217127`*^9, 
+  3.510374100686084*^9}, {3.510374130892456*^9, 3.5103742110939674`*^9}, {
+  3.510374249453249*^9, 3.5103742564503813`*^9}, {3.5103744837947235`*^9, 
+  3.5103744919476323`*^9}, {3.5184854350898438`*^9, 3.5184854350898438`*^9}},
+ CellID->2096742444],
+
+Cell["XXXX.", "Caption",
+ CellID->1891092685],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["inputfile", "TI"],
+ " is the name of the input file. The input file is the text file which user \
+can create and edit by using text editor like ",
+ ButtonBox["Notepad",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://en.wikipedia.org/wiki/Notepad_%28software%29"], None},
+  ButtonNote->"http://en.wikipedia.org/wiki/Notepad_%28software%29"],
+ " or ",
+ ButtonBox["Vim.",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://www.vim.org/"], None},
+  ButtonNote->"http://www.vim.org/"],
+ " The following is the example of the input file. There must be the spaces \
+between the name of parameter, its value and the comment. "
+}], "Text",
+ CellChangeTimes->{{3.5103762368420057`*^9, 3.5103762777315006`*^9}, {
+   3.510376327179988*^9, 3.510376361587764*^9}, {3.5103767392611303`*^9, 
+   3.5103767648443975`*^9}, {3.510377057740003*^9, 3.510377059176914*^9}, 
+   3.5103771990102406`*^9, {3.5103773327523117`*^9, 3.5103773673943667`*^9}, {
+   3.510377967429742*^9, 3.5103779895769167`*^9}, 3.5104444885855846`*^9, {
+   3.510448481529608*^9, 3.510448570781358*^9}, {3.510448662992403*^9, 
+   3.510448662992403*^9}, {3.510448702780187*^9, 3.510448813211589*^9}, {
+   3.512858776051345*^9, 3.5128587798313847`*^9}, {3.5128588297841454`*^9, 
+   3.512858870849125*^9}, {3.512858958227405*^9, 3.5128590645420485`*^9}},
+ CellID->209835124],
+
+Cell[BoxData[{
+ RowBox[{"#", " ", "the", " ", "example", " ", "of", " ", "the", " ", "input",
+   " ", "file", " ", "for", " ", "the", " ", "model", " ", "1.1", " ", 
+  RowBox[{
+   RowBox[{"(", "\"\<mod1_1.in\>\"", ")"}], ".", "\n", "model"}], "        ", 
+  "1.1"}], "\n", 
+ RowBox[{"initN", "\t    ", "6.02", "*", 
+  RowBox[{"10", "^", "11"}], "\t", "#", " ", "initial", " ", "number", " ", 
+  "of", " ", "parasites"}], "\n", 
+ RowBox[{
+  RowBox[{
+  "lifecycle", "\t", "48", "   ", "#", " ", "the", " ", "life", " ", "cycle", 
+   " ", "of", " ", "parasites"}], " "}], "\n", 
+ RowBox[{"mu", "           ", "13", "   ", "#", " ", "mean", " ", "age", " ", 
+  "of", " ", "parasites", " ", "on", " ", "admission"}], "\n", 
+ RowBox[{
+  RowBox[{
+  "sigma", "\t    ", "8", "    ", "#", " ", "SD", " ", "of", " ", "the", " ", 
+   "age", " ", "of", " ", "parasites"}], "  "}], "\n", 
+ RowBox[{"pmr", "          ", "12", "   ", "#", " ", "parasite", " ", 
+  "multiplication", " ", "rate"}], "\n", 
+ RowBox[{"everyH", "       ", "24", "   ", "#", " ", "duration", " ", 
+  RowBox[{"(", "hours", ")"}], " ", "of", " ", "giving", " ", "the", " ", 
+  "drug"}], "\n", 
+ RowBox[{"Ndrug", " \t   ", "7", "\t", "#", " ", "number", " ", "of", " ", 
+  "the", " ", "drug"}], "\n", 
+ RowBox[{
+  RowBox[{
+  "Concfile", " \t", "\"\<P002.csv\>\"", "  ", "#", " ", "the", " ", "name", 
+   " ", "of", " ", "DHA", " ", "concentration", " ", "file"}], "\t"}], "\n", 
+ RowBox[{"parafile", " \t", "\"\<paraP002.csv\>\"", "  ", "#", " ", "the", 
+  " ", "name", " ", "of", " ", "parasite", " ", "count", " ", "file"}], "\n", 
+ RowBox[{
+  RowBox[{"KillZone", " \t", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"6", ",", " ", "20"}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"21", ",", " ", "38"}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"39", ",", " ", "44"}], "}"}]}], "}"}], "  ", "#", " ", "the", 
+   " ", "age", " ", "ranges", " ", "of", " ", "the", " ", "sensitive", " ", 
+   "parasites"}], " "}], "\n", 
+ RowBox[{"gamma", "\t    ", 
+  RowBox[{"{", 
+   RowBox[{"8.31521", ",", " ", "3.96412", ",", " ", "3.96412"}], "}"}], "\t\t",
+   "#", " ", "the", " ", "slopes", " ", "of", " ", "the", " ", "EC", " ", 
+  "curves"}], "\n", 
+ RowBox[{"ec50", "\t     ", 
+  RowBox[{"{", 
+   RowBox[{"38.2193", ",", " ", "0.662235", ",", " ", "0.662235"}], "}"}], 
+  "\t", "#", " ", "the", " ", "EC50", " ", "for", " ", "each", " ", "kill", 
+  " ", "zone"}], "\n", 
+ RowBox[{"emin", " \t    ", 
+  RowBox[{"{", 
+   RowBox[{"0.0", ",", " ", "0.0", ",", " ", "0.0"}], "}"}], "\t\t", "#", " ",
+   "minimum", " ", "efficacy", " ", "of", " ", "the", " ", "drug"}], "\n", 
+ RowBox[{"emax", " \t    ", 
+  RowBox[{"{", 
+   RowBox[{"99.9779", ",", " ", "99.99", ",", " ", "99.99"}], "}"}], " \t", 
+  "#", " ", "maximum", " ", "efficacy", " ", "of", " ", "the", " ", 
+  "drug"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"1", "/", "alpha"}], "\t  ", "7.78339", "   ", "#", " ", "the", 
+   " ", "action", " ", "time", " ", 
+   RowBox[{"(", "hours", ")"}]}], " "}], "\n", 
+ RowBox[{
+  RowBox[{"outform", "\t  ", "1", "     ", "#", " ", "output", " ", "forms"}],
+   ";", " ", 
+  RowBox[{
+  "check", " ", "the", " ", "manual", " ", "for", " ", "more", " ", 
+   "details"}]}]}], "Code",
+ InitializationCell->False,
+ CellChangeTimes->{{3.510376862273224*^9, 3.5103768715506725`*^9}, {
+  3.510376917188222*^9, 3.5103770314695177`*^9}, {3.510378224465042*^9, 
+  3.510378234804555*^9}, {3.510448984639254*^9, 3.5104490726186714`*^9}},
+ FontSize->10,
+ CellID->108618510]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "The example of using the package. The package first must be loaded by using \
+",
+ ButtonBox["Needs",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/Needs"],
+ " or ",
+ ButtonBox["Get",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/Get"],
+ " function."
+}], "MathCaption",
+ CellChangeTimes->{{3.5103743021347866`*^9, 3.510374319330865*^9}, {
+   3.510378428709474*^9, 3.510378443609618*^9}, 3.510449093325222*^9, {
+   3.5104491647987385`*^9, 3.510449308855967*^9}, {3.510449457754527*^9, 
+   3.5104494589881907`*^9}, {3.510449489611167*^9, 3.5104495212493596`*^9}},
+ CellID->836781195],
+
+Cell[BoxData[
+ RowBox[{"<<", "Indivaria`"}]], "Input",
+ CellChangeTimes->{{3.5103780309037323`*^9, 3.5103780350270424`*^9}},
+ CellID->2058623809]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+This example shows the output of IDVL from reading the input file, mod1_1.in, \
+which has the parameters and their values as shown above. \
+\>", "MathCaption",
+ CellChangeTimes->{{3.5103743021347866`*^9, 3.510374319330865*^9}, {
+   3.510378428709474*^9, 3.510378443609618*^9}, 3.510449093325222*^9, {
+   3.5104495296820536`*^9, 3.5104495644434924`*^9}, {3.510449617366455*^9, 
+   3.510449646193776*^9}, {3.5104497195269814`*^9, 3.5104497810700316`*^9}},
+ CellID->647131640],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"IDVL", "[", "\"\<mod1_1.in\>\"", "]"}]], "Input",
+ CellID->125661300],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\<\"******INDIVARIA*****\"\>"], "Print",
+ CellChangeTimes->{3.5102898280886497`*^9},
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->67348895],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"model\"\>", "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", "1.1`"}],
+  SequenceForm["model", ": ", 1.1],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5102898280886497`*^9},
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->226899281],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"outform\"\>", "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", "1"}],
+  SequenceForm["outform", ": ", 1],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5102898280886497`*^9},
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->288612682],
+
+Cell[BoxData["\<\"********************\"\>"], "Print",
+ CellChangeTimes->{3.5102898280886497`*^9},
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->64809150],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"model\"\>", "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", "1.1`"}],
+  SequenceForm["model", ": ", 1.1],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5102898280886497`*^9},
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->475891648],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"parafile\"\>", "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", "\<\"paraP002.csv\"\>"}],
+  SequenceForm["parafile", ": ", "paraP002.csv"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5102898280886497`*^9},
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->442014923],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"concfile\"\>", "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", "\<\"P002.csv\"\>"}],
+  SequenceForm["concfile", ": ", "P002.csv"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5102898280886497`*^9},
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->27869136],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"initn\"\>", "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", "\<\"6.02*10^11\"\>"}],
+  SequenceForm["initn", ": ", "6.02*10^11"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5102898281042695`*^9},
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->276450414],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"pmr\"\>", "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", "12"}],
+  SequenceForm["pmr", ": ", 12],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5102898281042695`*^9},
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->44395132],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"mu\"\>", "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", "13"}],
+  SequenceForm["mu", ": ", 13],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5102898281042695`*^9},
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->69163547],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"sigma\"\>", "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", "8"}],
+  SequenceForm["sigma", ": ", 8],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5102898281042695`*^9},
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->89554436],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"lifecycle\"\>", "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", "48"}],
+  SequenceForm["lifecycle", ": ", 48],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5102898281042695`*^9},
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->358457903],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"killzone\"\>", "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", "\<\"{{6,20},{21,38},{39,44}}\"\>"}],
+  SequenceForm["killzone", ": ", "{{6,20},{21,38},{39,44}}"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5102898281198893`*^9},
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->46803406],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"everyh\"\>", "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", "24"}],
+  SequenceForm["everyh", ": ", 24],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5102898281198893`*^9},
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->18259049],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"ndrug\"\>", "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", "7"}],
+  SequenceForm["ndrug", ": ", 7],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5102898281198893`*^9},
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->477625159],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"gamma\"\>", "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", "\<\"{8.31521,3.96412,3.96412}\"\>"}],
+  SequenceForm["gamma", ": ", "{8.31521,3.96412,3.96412}"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5102898281198893`*^9},
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->565658617],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"ec50\"\>", "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", "\<\"{38.2193,0.662235,0.662235}\"\>"}],
+  SequenceForm["ec50", ": ", "{38.2193,0.662235,0.662235}"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5102898281198893`*^9},
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->13811214],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"emin\"\>", "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", "\<\"{0.0,0.0,0.0}\"\>"}],
+  SequenceForm["emin", ": ", "{0.0,0.0,0.0}"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5102898281355085`*^9},
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->129134320],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"emax\"\>", "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", "\<\"{99.9779,99.99,99.99}\"\>"}],
+  SequenceForm["emax", ": ", "{99.9779,99.99,99.99}"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5102898281355085`*^9},
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->22896400],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"1/alpha\"\>", "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", "7.78339`"}],
+  SequenceForm["1/alpha", ": ", 7.78339],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5102898281355085`*^9},
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->228841605],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"outform\"\>", "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", "1"}],
+  SequenceForm["outform", ": ", 1],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5102898281355085`*^9},
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->677106879],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"runmax: \"\>", "\[InvisibleSpace]", "96"}],
+  SequenceForm["runmax: ", 96],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5102898282604656`*^9},
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->287390987]
+}, Open  ]],
+
+Cell[BoxData[
+ GraphicsBox[{{{}, {}, 
+    {RGBColor[1, 0, 0], LineBox[CompressedData["
+1:eJxTTMoPSmViYGAQAWIQDQOR6WlsEYLqDlCuA4/Hk6dpWmpQvoCD8OR8mSP/
+VaB8CQfTeasXN7yA8RUceNdHdp2/BONrOBRvWKSzzBvGN3KYJHiiUsBcGcq3
+cMh8sXF6Ya0SlG/nIBQ6zebNQhjfySH+pt4Wx00wvquDVNvK5+WGML6HQ0hl
+rMGuW4pQvreD365gU93LClC+n8PiTZNmyydD+Q0BDgZB9WpbuuSg8kEOscd+
+/08/JAOVD3Z4V2eyd7MATD7UYcoqH39OJii/IcxhYV3fXYceqHqGCAfe+xoJ
+bo3SDgDsfU0Q
+      "]]}}, {{}, {}, 
+    {RGBColor[0, 0, 1], 
+     PointBox[{{0., 11.650307523131936`}, {2., 11.418301291319745`}, {4., 
+      11.071882007306126`}, {6., 10.854559620029976`}, {8., 
+      10.553529624365995`}, {12., 9.733293585917647}, {18., 
+      9.51523782531843}, {24., 9.357629971956761}, {30., 9.267453341607673}, {
+      36., 9.153509989300836}, {42., 8.852479993636855}, {48., 
+      8.454539984964818}, {54., 8.153509989300836}, {60., 
+      8.454539984964818}, {66., 7.755569980628798}, {72., 
+      7.755569980628798}, {84., 7.755569980628798}}]}, {}}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->True,
+  AxesOrigin->{0, 0},
+  Epilog->LineBox[{{0, 8}, {96, 8}}],
+  Frame->True,
+  FrameLabel->{{
+     FormBox["\"log10 Number of parasites\"", TraditionalForm], 
+     FormBox["\"\"", TraditionalForm]}, {
+     FormBox["\"time(hrs)\"", TraditionalForm], 
+     FormBox["\"paraP002.csv rmsd:0.2902\"", TraditionalForm]}},
+  ImageSize->{332., Automatic},
+  PlotRange->{{0, 96}, {0, 13}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{3.510289829228881*^9},
+ CellID->5683559]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "The list of parameters required by the model 1.1 with outform=1 can be \
+shown by using the function ",
+ Cell[BoxData[
+  ButtonBox["ListPar",
+   BaseStyle->"Link",
+   ButtonData->"paclet:Indivaria/ref/ListPar"]], "InlineFormula"],
+ "."
+}], "MathCaption",
+ CellChangeTimes->{{3.5103743021347866`*^9, 3.510374319330865*^9}, {
+   3.510378428709474*^9, 3.510378443609618*^9}, 3.510449093325222*^9, {
+   3.510449844533862*^9, 3.510449931000208*^9}, {3.51045036836032*^9, 
+   3.5104503905820303`*^9}},
+ CellID->126833751],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ListPar", "[", 
+  RowBox[{"1.1", ",", "1"}], "]"}]], "Input",
+ CellChangeTimes->{{3.5102917497524185`*^9, 3.510291760967291*^9}, 
+   3.510378483780658*^9},
+ CellID->58346655],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"model\"\>", ",", "\<\"parafile\"\>", ",", "\<\"concfile\"\>", 
+   ",", "\<\"initn\"\>", ",", "\<\"pmr\"\>", ",", "\<\"mu\"\>", 
+   ",", "\<\"sigma\"\>", ",", "\<\"lifecycle\"\>", ",", "\<\"killzone\"\>", 
+   ",", "\<\"everyh\"\>", ",", "\<\"ndrug\"\>", ",", "\<\"gamma\"\>", 
+   ",", "\<\"ec50\"\>", ",", "\<\"emin\"\>", ",", "\<\"emax\"\>", 
+   ",", "\<\"1/alpha\"\>", ",", "\<\"outform\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.5102917620138044`*^9, 3.5103784847646294`*^9},
+ CellID->74853349]
+}, Open  ]]
+}, Open  ]],
+
+Cell[TextData[{
+ "The detail of each model can be found at ",
+ ButtonBox["http://slphyx.sakngoi.com",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://slphyx.sakngoi.com"], None},
+  ButtonNote->"http://slphyx.sakngoi.com"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.5103785467079973`*^9, 3.5103786146645255`*^9}, {
+  3.510454416187801*^9, 3.510454425138405*^9}, {3.5104544649084525`*^9, 
+  3.510454495665414*^9}, {3.6750357923054714`*^9, 3.675035793085471*^9}},
+ CellID->305852030],
+
+Cell[CellGroupData[{
+
+Cell["More About", "TutorialMoreAboutSection",
+ CellID->23220180],
+
+Cell[TextData[ButtonBox["List of models",
+ BaseStyle->"Link",
+ ButtonData->"paclet:Indivaria/tutorial/List of models"]], "TutorialMoreAbout",
+ CellChangeTimes->{{3.5159902577008295`*^9, 3.5159902610708184`*^9}, {
+  3.515990294505476*^9, 3.5159902946146884`*^9}, {3.515991281713031*^9, 
+  3.51599129595154*^9}, {3.5159913298616724`*^9, 3.5159913298928976`*^9}},
+ CellID->1567025153]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Tutorials", "RelatedTutorialsSection",
+ CellID->415694126],
+
+Cell["XXXX", "RelatedTutorials",
+ CellID->806871991]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Wolfram Education Group Courses", "TutorialRelatedLinksSection",
+ CellID->415694148],
+
+Cell["XXXX", "TutorialRelatedLinks",
+ CellID->415694149]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{700, 770},
+WindowMargins->{{Automatic, 385}, {Automatic, 77}},
+PrintingPageRange->{Automatic, Automatic},
+ShowSelection->True,
+FrontEndVersion->"10.4 for Microsoft Windows (64-bit) (April 11, 2016)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "TutorialPageStyles.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 325, 14, 22, "History",
+ CellID->1247902091],
+Cell[CellGroupData[{
+Cell[907, 38, 68, 1, 27, "CategorizationSection",
+ CellID->1122911449],
+Cell[978, 41, 81, 2, 70, "Categorization",
+ CellID->686433507],
+Cell[1062, 45, 82, 2, 70, "Categorization",
+ CellID->605800465],
+Cell[1147, 49, 79, 2, 70, "Categorization",
+ CellID->468444828],
+Cell[1229, 53, 79, 1, 70, "Categorization"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1345, 59, 56, 1, 17, "KeywordsSection",
+ CellID->1427428552],
+Cell[1404, 62, 45, 1, 70, "Keywords",
+ CellID->1251852827]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1486, 68, 53, 1, 17, "DetailsSection",
+ CellID->307771771],
+Cell[1542, 71, 63, 2, 31, "Details",
+ CellID->218895918],
+Cell[1608, 75, 151, 3, 31, "Details",
+ CellID->350963985],
+Cell[1762, 80, 146, 3, 31, "Details",
+ CellID->795871300],
+Cell[1911, 85, 71, 2, 31, "Details",
+ CellID->199739161],
+Cell[1985, 89, 60, 2, 31, "Details",
+ CellID->40625308],
+Cell[2048, 93, 61, 2, 31, "Details",
+ CellID->357121918],
+Cell[2112, 97, 62, 2, 31, "Details",
+ CellID->35949532],
+Cell[2177, 101, 78, 2, 31, "Details",
+ CellID->929432370],
+Cell[2258, 105, 67, 2, 31, "Details",
+ CellID->240026365]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2362, 112, 52, 1, 105, "Title",
+ CellID->509267359],
+Cell[2417, 115, 1258, 26, 85, "Text",
+ CellID->1534169418],
+Cell[3678, 143, 1373, 36, 99, "DefinitionBox",
+ CellID->2096742444],
+Cell[5054, 181, 45, 1, 27, "Caption",
+ CellID->1891092685],
+Cell[CellGroupData[{
+Cell[5124, 186, 1367, 27, 52, "Text",
+ CellID->209835124],
+Cell[6494, 215, 3542, 79, 331, "Code",
+ InitializationCell->False,
+ CellID->108618510]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10073, 299, 600, 16, 51, "MathCaption",
+ CellID->836781195],
+Cell[10676, 317, 145, 3, 27, "Input",
+ CellID->2058623809]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10858, 325, 483, 8, 51, "MathCaption",
+ CellID->647131640],
+Cell[CellGroupData[{
+Cell[11366, 337, 93, 2, 27, "Input",
+ CellID->125661300],
+Cell[CellGroupData[{
+Cell[11484, 343, 161, 3, 21, "Print",
+ CellID->67348895],
+Cell[11648, 348, 304, 8, 21, "Print",
+ CellID->226899281],
+Cell[11955, 358, 303, 8, 21, "Print",
+ CellID->288612682],
+Cell[12261, 368, 161, 3, 21, "Print",
+ CellID->64809150],
+Cell[12425, 373, 304, 8, 21, "Print",
+ CellID->475891648],
+Cell[12732, 383, 337, 8, 21, "Print",
+ CellID->442014923],
+Cell[13072, 393, 328, 8, 21, "Print",
+ CellID->27869136],
+Cell[13403, 403, 327, 8, 21, "Print",
+ CellID->276450414],
+Cell[13733, 413, 296, 8, 21, "Print",
+ CellID->44395132],
+Cell[14032, 423, 294, 8, 21, "Print",
+ CellID->69163547],
+Cell[14329, 433, 298, 8, 21, "Print",
+ CellID->89554436],
+Cell[14630, 443, 309, 8, 21, "Print",
+ CellID->358457903],
+Cell[14942, 453, 360, 8, 21, "Print",
+ CellID->46803406],
+Cell[15305, 463, 302, 8, 21, "Print",
+ CellID->18259049],
+Cell[15610, 473, 299, 8, 21, "Print",
+ CellID->477625159],
+Cell[15912, 483, 357, 8, 21, "Print",
+ CellID->565658617],
+Cell[16272, 493, 358, 8, 21, "Print",
+ CellID->13811214],
+Cell[16633, 503, 331, 8, 21, "Print",
+ CellID->129134320],
+Cell[16967, 513, 346, 8, 21, "Print",
+ CellID->22896400],
+Cell[17316, 523, 316, 8, 21, "Print",
+ CellID->228841605],
+Cell[17635, 533, 303, 8, 21, "Print",
+ CellID->677106879],
+Cell[17941, 543, 262, 7, 21, "Print",
+ CellID->287390987]
+}, Open  ]],
+Cell[18218, 553, 1569, 34, 237, "Output",
+ CellID->5683559]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19836, 593, 533, 13, 53, "MathCaption",
+ CellID->126833751],
+Cell[CellGroupData[{
+Cell[20394, 610, 198, 5, 27, "Input",
+ CellID->58346655],
+Cell[20595, 617, 544, 9, 45, "Output",
+ CellID->74853349]
+}, Open  ]]
+}, Open  ]],
+Cell[21166, 630, 487, 12, 21, "Text",
+ CellID->305852030],
+Cell[CellGroupData[{
+Cell[21678, 646, 65, 1, 64, "TutorialMoreAboutSection",
+ CellID->23220180],
+Cell[21746, 649, 381, 6, 20, "TutorialMoreAbout",
+ CellID->1567025153]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22164, 660, 72, 1, 70, "RelatedTutorialsSection",
+ CellID->415694126],
+Cell[22239, 663, 52, 1, 20, "RelatedTutorials",
+ CellID->806871991]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22328, 669, 98, 1, 70, "TutorialRelatedLinksSection",
+ CellID->415694148],
+Cell[22429, 672, 56, 1, 20, "TutorialRelatedLinks",
+ CellID->415694149]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
