@@ -1,0 +1,54 @@
+***Parameter File Template for Indivaria***
+
+Age		20 {[age]=year}
+Sex 		2  {1=Male,2=Female,3=Male->Female,4=Female->Male}
+weight		67.85
+
+day		1000 {Number of days for running the model}
+
+
+***Drug***
+drugname	5 {xxxx}
+eliminationorder 1 {0=zoro order,1=first order,2=second order}
+dateofdruguse	1 {first day for drug use}
+firstorderrate  0.0004335 {elimination rate}
+initconc	0.23435   {initial concentration}
+zeroorderrate   0.000556
+
+***Parasite***
+
+****KwiatkowskiNowak Model****
+kwiatkowskinowak 	0 {0=disable;1=2stages;2=4stages}
+kwiatkowskinowakr 	16
+kwiatkowskinowakd1	1
+kwiatkowskinowakd2	1
+kwiatkowskinowakd3	1
+kwiatkowskinowakd4	1
+kwiatkowskinowakp	0.00001
+kwiatkowskinowaks	0.001
+kwiatkowskinowaks1	0.00001
+kwiatkowskinowaks2	0.00002
+kwiatkowskinowaks3	0.0001
+kwiatkowskinowaks4	0.001
+kwiatkowskinowakh	0.05
+kwiatkowskinowakx0	1
+kwiatkowskinowaky0	1
+kwiatkowskinowakx10	1
+kwiatkowskinowakx20	1
+kwiatkowskinowakx30	1
+kwiatkowskinowakx40	1
+
+****AndersonMayGupta Model***
+AndersonMayGupta	1 {0=disable;1=enable}
+AndersonMayGuptaLambda	1	
+AndersonMayGuptamu	0.00833
+AndersonMayGuptabeta	0.1
+AndersonMayGuptaalpha	0.2
+AndersonMayGuptadelta	72
+AndersonMayGuptar	16
+AndersonMayGuptax0	10000
+AndersonMayGuptay0	1
+AndersonMayGuptas0	0
+
+
+***End of parameter file***

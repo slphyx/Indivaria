@@ -1,0 +1,3 @@
+::::INDIVARIA::::
+RED BLOOD CELLS
+DATE	 UninfectedRBCs	 InfectedRBCs	 Merozoites
