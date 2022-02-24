@@ -1,0 +1,9 @@
+model 	2.4
+outform		0
+
+parafile		"paraP002.csv"
+concfile		"P002.csv"
+
+outname		"dortest"
+
+runsteps	50

@@ -1,0 +1,20 @@
+#the example of the input file for the model.
+model 1.5
+
+lambda	1.
+mu	0.00833
+beta	0.1
+alpha	0.2
+r	16.
+d	72
+
+initx	10000
+inity	1.
+inits	0.0
+
+runsteps	600
+stepsize	0.1
+
+outform		0	  #output forms; check the manual for more details
+
+

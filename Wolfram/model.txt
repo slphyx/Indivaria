@@ -1,0 +1,52 @@
+Indivaria
+
+model 1.0	generate parasite count data during treatment with artesunate. 
+			required: parameter file and DHA concentration data.
+
+model 1.1	compare the observed parasite count data with the modelled data.  
+			required: parameter file , observed parasite count data and DHA concentration data
+
+model 1.2	do the batch run of the model 1.1. see Saralamba et al. PNAS 2011 for the range of 
+			each parameter.	required: observed parasite count data and DHA concentration data
+
+model 1.3	Hoshen's dormancy model (Hoshen et al. Parasitology 2000). 
+			required: DHA concentration data.
+
+model 1.4	White's model. see White NJ et al.(1992) The effects of multiplication and synchronicity 
+			on the vascular distribution of parasites in falciparum malaria. Trans R Soc Trop Med Hyg 
+			86:590–597.  
+
+model 1.5 	Anderson, May and Gupta model (the model with no immunological responses. see Anderson et al.
+			(1989) Parasitology.
+
+model 1.6	Kwiatkowski & Nowak model (two stages). see Kwaitkowski et al. PNAS 1992 for more details.	
+
+model 1.7	Kwiatkowski & Nowak model (four stages). see Kwaitkowski et al. PNAS 1992 for more details.
+
+model 1.8	Gravenor's model (Estimating sequestered parasites). see Gravenor et al. PNAS 1998 for more details.
+
+model 1.9	Dormancy model (modified Saralamba's model (model 1.0);parasites at the age 6-26 hours become dormant
+			with the same probability and the same fraction).
+			
+model 2.0	Dormancy model (modified Saralamba's model (model 1.0);the number of dormant parasites distribute 
+			following the normal distribution).
+			
+model 2.1 	Simpson model, See Simpson, J.A.,et al. AAC 2000 for more details.  
+
+model 2.2 	Simpson model, See Simpson, J.A.,et al. AAC 2000 for more details.
+
+model 2.3	Compare the parasite count data with Hoshen's dormancy model (model 1.3)
+
+model 2.4	do the batch run of the model 2.3.
+
+model 2.5	modified Hoshe's model (model 1.3; dormant parasites can be observed in the blood sample).
+
+model 2.6	compare the parasite count data with Dormancy model (model 1.9).
+
+model 2.7	do the batch run of dormancy model (model 1.9 & 2.6) !!! TEMPORARY
+
+model 2.8 	do the batch run of modified Hoshen's model (model 2.5) !!! TEMPORARY 
+
+model 2.9 	compare the parasite count data with modified Hoshen's model (model 2.5)
+
+				

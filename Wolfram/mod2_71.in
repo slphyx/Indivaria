@@ -1,0 +1,9 @@
+model 	2.71
+outform		0
+
+parafile		"paraP002.csv"
+concfile		"P002.csv"
+
+outname		"temp"
+
+runsteps	1

@@ -1,9 +1,0 @@
-model 	1.8
-
-initn	{1000,200}  #init n1,n2
-lambdals	{0.0309,0.0438}	#lambda1, lambda2
-muls	{0.1,0.25}	#mu1,mu2
-r		8.3		#R
-runsteps	60
-stepsize	0.1
-outform		0                        
